@@ -1,0 +1,26 @@
+2022-12-01 13:29:25.351 [info] Validating found git in: git
+2022-12-01 13:29:25.351 [info] Using git 2.38.1 from git
+2022-12-01 13:29:25.351 [info] > git rev-parse --show-toplevel [14ms]
+2022-12-01 13:29:25.351 [info] > git rev-parse --git-dir --git-common-dir [3ms]
+2022-12-01 13:29:25.351 [info] Log level: Info
+2022-12-01 13:29:25.351 [info] Open repository: /home/adry/Documents/projects/nextjs/weather_app
+2022-12-01 13:29:25.403 [info] > git status -z -uall [106ms]
+2022-12-01 13:29:25.408 [info] > git remote --verbose [127ms]
+2022-12-01 13:29:25.409 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [140ms]
+2022-12-01 13:29:25.416 [info] > git config --get commit.template [93ms]
+2022-12-01 13:29:25.417 [info] > git rev-parse --show-toplevel [106ms]
+2022-12-01 13:29:25.543 [info] > git rev-parse --show-toplevel [114ms]
+2022-12-01 13:29:25.631 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [68ms]
+2022-12-01 13:29:25.678 [info] > git rev-parse --show-toplevel [125ms]
+2022-12-01 13:29:25.701 [info] > git status -z -uall [25ms]
+2022-12-01 13:29:25.705 [info] > git remote --verbose [36ms]
+2022-12-01 13:29:25.706 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [47ms]
+2022-12-01 13:29:25.709 [info] > git config --get commit.template [10ms]
+2022-12-01 13:29:25.711 [info] > git rev-parse --show-toplevel [24ms]
+2022-12-01 13:29:25.728 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2022-12-01 13:29:25.907 [info] > git check-ignore -v -z --stdin [13ms]
+2022-12-01 13:29:42.708 [info] > git status -z -uall [28ms]
+2022-12-01 13:29:42.711 [info] > git remote --verbose [52ms]
+2022-12-01 13:29:42.713 [info] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [76ms]
+2022-12-01 13:29:42.718 [info] > git config --get commit.template [11ms]
+2022-12-01 13:29:42.754 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]

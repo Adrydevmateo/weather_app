@@ -1,0 +1,14 @@
+2022-12-01 13:29:23.950 [info] Extension host with pid 14083 started
+2022-12-01 13:29:23.950 [info] Skipping acquiring lock for /home/adry/Documents/projects/nextjs/weather_app/projects/User/workspaceStorage/f7bd19ddc2fd7cc000e09244b31215e7.
+2022-12-01 13:29:24.380 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2022-12-01 13:29:24.383 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2022-12-01 13:29:24.383 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2022-12-01 13:29:24.844 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2022-12-01 13:29:24.845 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-12-01 13:29:25.207 [info] Eager extensions activated
+2022-12-01 13:29:25.347 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-12-01 13:29:25.349 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-12-01 13:29:25.350 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-12-01 13:29:25.432 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2022-12-01 13:29:46.189 [info] Extension host terminating: received terminate message from renderer
+2022-12-01 13:29:46.217 [info] Extension host with pid 14083 exiting with code 0
