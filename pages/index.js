@@ -51,27 +51,30 @@ export default function Home() {
           />
 
           {/* Search */}
-          <section className="relative flex justify-between items-center max-w-[500] w-full m-auto pt-4 text-white z-[2]">
+          <section className="relative flex justify-between items-center w-full m-auto pt-4 text-white z-[2] sm:pt-8 lg:w-[90%]">
             <form
-              className="flex justify-between items-center w-5/6 m-auto p-3 bg-transparent border border-gray-300 text-white rounded-xl"
+              className="flex justify-between items-center w-5/6 m-auto p-3 bg-transparent border border-gray-300 text-white rounded-xl sm:rounded-2xl sm:w-11/12 md:p-4"
               onSubmit={fetchWeather}
               action="#"
             >
               <fieldset>
                 <input
-                  className="bg-transparent border-none text-white focus:outline-none text-lg"
+                  className="bg-transparent border-none text-white focus:outline-none text-lg sm:text-3xl md:text-4xl"
                   onChange={({ target }) => setCity(target.value)}
                   placeholder="Search City"
                   type="text"
                 />
               </fieldset>
-              <button className="ml-[-8rem]" onClick={fetchWeather}>
-                <BsSearch size={16} />
+              <button
+                className="ml-[-8rem] md:p-3 md:mt-[0.4rem]"
+                onClick={fetchWeather}
+              >
+                <BsSearch size={20} />
               </button>
             </form>
           </section>
 
-          {/* Using conditional rendering */}
+          {/* Using conditional rendering to display the weather component*/}
           {weather.main && <Weather data={weather} />}
         </main>
       </>
