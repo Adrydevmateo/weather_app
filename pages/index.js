@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import axios from "axios";
 import { useState } from "react";
+import { BsSearch } from "react-icons/bs";
 
 export default function Home() {
   const [city, setCity] = useState("");
@@ -30,15 +31,43 @@ export default function Home() {
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </Head>
 
-      <main>
-        <form onSubmit={fetchWeather} action="#">
-          <input
-            onChange={({ target }) => setCity(target.value)}
-            placeholder="Search City"
-            type="text"
-          />
-          <button onClick={fetchWeather}>Click</button>
-        </form>
+      <main className="absolute top-0 left-0 right-0 bottom-0">
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1]"></div>
+
+        {/* Background Image */}
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          }
+          className={"objet-cover"}
+          alt={"Background Image"}
+          fill={true}
+        />
+
+        {/* Search */}
+        <section className="relative flex justify-between items-center max-w-[500] w-full m-auto pt-4 text-white z-[2]">
+          <form
+            className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl"
+            onSubmit={fetchWeather}
+            action="#"
+          >
+            <fieldset>
+              <input
+                className="bg-transparent border-none text-white focus:outline-none text-2xl pr-[38rem] ml-2"
+                onChange={({ target }) => setCity(target.value)}
+                placeholder="Search City"
+                type="text"
+              />
+            </fieldset>
+            <button className="mr-2 pl-8" onClick={fetchWeather}>
+              <BsSearch size={20} />
+            </button>
+          </form>
+        </section>
+
+        {/* Using conditional rendering */}
+        {weather.main && <Weather data={weather} />}
       </main>
     </>
   );
