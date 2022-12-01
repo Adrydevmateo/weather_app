@@ -36,7 +36,7 @@ export default function Home() {
           <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         </Head>
 
-        <main className="absolute top-0 left-0 right-0 bottom-0">
+        <main className="fixed flex flex-col w-screen h-screen">
           {/* Overlay */}
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1]"></div>
 
@@ -53,20 +53,20 @@ export default function Home() {
           {/* Search */}
           <section className="relative flex justify-between items-center max-w-[500] w-full m-auto pt-4 text-white z-[2]">
             <form
-              className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl"
+              className="flex justify-between items-center w-5/6 m-auto p-3 bg-transparent border border-gray-300 text-white rounded-xl"
               onSubmit={fetchWeather}
               action="#"
             >
               <fieldset>
                 <input
-                  className="bg-transparent border-none text-white focus:outline-none text-2xl pr-[38rem] ml-2"
+                  className="bg-transparent border-none text-white focus:outline-none text-lg"
                   onChange={({ target }) => setCity(target.value)}
                   placeholder="Search City"
                   type="text"
                 />
               </fieldset>
-              <button className="mr-2 pl-8" onClick={fetchWeather}>
-                <BsSearch size={20} />
+              <button className="ml-[-8rem]" onClick={fetchWeather}>
+                <BsSearch size={16} />
               </button>
             </form>
           </section>
