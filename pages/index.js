@@ -36,7 +36,7 @@ export default function Home() {
           <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         </Head>
 
-        <main className="fixed flex flex-col w-screen h-screen">
+        <main className="fixed flex flex-col w-screen h-screen overflow-auto">
           {/* Overlay */}
           <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1]"></div>
 
